@@ -1,0 +1,426 @@
+/**General**/
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Nunito', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+h1 {
+    font-size: 5.8rem;
+    color: white;
+    margin: 0;
+}
+
+h2 {
+    font-size: 5rem;
+    margin: 0;
+    color: #F7D04F;
+}
+
+h3 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #F7D04F;
+}
+
+p {
+    font-size: 2rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+/**Utilidades**/
+
+.contenedor {
+    max-width: 100rem;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.seccion {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+.d-block {
+    display: block!important;
+}
+
+
+/**Header**/
+
+.site-header {
+    background-image: url(../img/header-background.jpg);
+    height: 100vh;
+    min-height: 60rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.nav-item a {
+    color: #ffffff;
+}
+
+.nav-item a:hover {
+    color: #F7D04F;
+}
+
+.wrapper {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.site-menu {
+    background: #ffffff;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+.carousel-item img {
+    height: 70vh;
+    object-fit: cover;
+}
+
+.contenido-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.barra-superior {
+    display: flex;
+    justify-content: space-between;
+}
+
+.barra-superior a {
+    flex-basis: 30%;
+}
+
+.menu a {
+    font-size: 2rem;
+    margin-left: 2.5rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: dimgray;
+}
+
+
+/**Servicios**/
+
+.servicio-fondo {
+    position: relative;
+}
+
+.absoluta {
+    height: 100%;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+}
+
+.servicios {
+    display: flex;
+    justify-content: center;
+}
+
+.titulo-servicios {
+    flex-basis: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-servicios {
+    flex-basis: 60%;
+}
+
+.contenido {
+    display: flex;
+}
+
+.dibujo {
+    margin: auto;
+    flex-basis: 30%;
+    padding: 0 4rem;
+}
+
+.contenido-texto {
+    text-align: center;
+    flex-basis: 70%;
+}
+
+
+/**Main**/
+
+.contenedor-vinilos {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.vinilos {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc(33.3% - 2rem);
+    display: flex;
+    flex-direction: column;
+    border: 0.1rem solid black;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.img-vinilo {
+    min-height: 32rem
+}
+
+.img-vinilo:hover {
+    padding: 2rem;
+}
+
+.vinilo-descripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.precio {
+    font-weight: 700;
+}
+
+
+/**Boton**/
+
+.btn {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 1rem 3rem;
+    text-align: center;
+    border: none;
+    border-radius: 0 0 3rem 0;
+}
+
+.btn-amarillo {
+    background-color: #F7D04F;
+    color: black;
+}
+
+.btn-amarillo:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.btn-verde {
+    background-color: green;
+    color: white;
+}
+
+
+/**SECCION NOSOTROS**/
+
+.fondo-nosotros {
+    background-color: black;
+}
+
+.contenido-nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenido-nosotros p {
+    color: white;
+    text-align: center;
+}
+
+
+/**RElleno**/
+
+.img-relleno {
+    background-image: url(../img/WallpaperDog-17135545.jpg);
+    height: 60vh;
+    min-height: 60rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/**Nuestro equipo**/
+
+.equipo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.tarjeta-equipo {
+    flex: 0 0 calc(33.3% - 2rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.contenido-equipo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.absoluto-equipo {
+    position: absolute;
+    top: 2rem;
+    left: 8rem;
+}
+
+.contenido-equipo h3 {
+    padding-top: 2rem;
+}
+
+
+/**Footer**/
+
+.footer-fondo {
+    background-color: black;
+}
+
+.fondo-barra {
+    background-color: #F7D04F;
+    padding: 2rem 0;
+}
+
+.iconos-barra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconos-barra a {
+    margin: 0 2rem;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.info {
+    flex-basis: calc(25% - 1rem);
+}
+
+.info li {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-top: 1rem;
+}
+
+.info li span {
+    color: #F7D04F;
+}
+
+
+/**Sitio vinilo**/
+
+.vinilo-header {
+    background-color: black;
+}
+
+.vinilos-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.caratula-vinilo {
+    flex-basis: 60%;
+    padding: 2rem 1rem;
+    margin-right: 2rem;
+}
+
+.info-vinilo {
+    flex-basis: calc(40% - 2rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+}
+
+
+/**Formulario**/
+
+.formulario {
+    margin: 0 auto;
+    width: 90rem;
+    height: 100%;
+}
+
+.contacto {
+    margin-bottom: 2rem;
+}
+
+legend {
+    font-size: 2.2rem;
+    color: #4f4f4f;
+}
+
+label {
+    font-weight: 700;
+    display: block;
+}
+
+input:not([type="submit"]),
+select,
+textarea {
+    padding: .5rem;
+    display: block;
+    width: 100%;
+    margin-bottom: 2rem;
+    background-color: snow;
+}
+
+textarea {
+    height: 20rem;
+}
+
+.esquina {
+    display: flex;
+    justify-content: flex-end;
+}
